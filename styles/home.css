@@ -1,0 +1,81 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+    font-family: "SF Pro Display", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.homePage-container {
+    background-color: rgb(212, 212, 212);
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.homePage-header {
+    width: 100vw;
+    height: 7.5vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.homeLinks-container a {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 60px;
+    text-decoration: none;
+    color: #020202;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: #cd3737;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    background-color: rgb(66, 66, 66);
+}
+
+.homeLinks:not(:last-child) {
+    margin-right: 20px;
+}
+.homeSocials-container {
+    display: flex;
+    justify-content: center;
+    /* flex-grow: ; */
+    margin-right: 20px;
+}
+.homeSocials:not(:last-child) {
+    margin-right: 20px;
+}
+
+.logo-container {
+    margin-left: 20px;
+}
+
+.logo-container .logo {
+    height: 22px;
+    width: 165.23px;
+    /* margin-right: 50px; */
+    transform: translateY(3px);
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
